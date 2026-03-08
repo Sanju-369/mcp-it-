@@ -1,6 +1,6 @@
 # MCP-IT 🚀
 
-**Get Your Business Found by AI Shoppers — ChatGPT, Google AI, Gemini**
+**Get Your Business Found by AI Shoppers — ChatGPT, Gemini , Claude , Perplexity , Other PRivate Agent**
 
 MCP-IT implements UCP, ACP and MCP for independent businesses so they appear in AI agent shopping searches. 48 hours setup. No technical knowledge needed.
 
