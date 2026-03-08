@@ -9,13 +9,15 @@ MCP-IT implements UCP, ACP and MCP for independent businesses so they appear in 
 Every day millions of people open ChatGPT, Google AI Mode, and Gemini and ask things like:
 
 ** Find me white sneakers under $50 in New York **
+
 ** Book me a cafe in London with good coffee **
+
 ** Find me custom glasses under $100 **
 
 ## The Result 
 
  Only Walmart, Nike, Amazon, and big brand partners appear. Most Of the bussinesses struggle to appear here 
- # Acording to The Expert Agentic Shooping Market By 2030 Cross $3 to $4 trillion Dollar Market Cap 
+ ### Acording to The Expert Agentic Shooping Market By 2030 Cross $3 to $4 trillion Dollar Market Cap 
 
  ## What MCP-IT Offer's You
 
@@ -23,9 +25,13 @@ Every day millions of people open ChatGPT, Google AI Mode, and Gemini and ask th
   A business registers on our platform, tells us what they sell, and we handle everything:
 
 ** Build their MCP server ** — live in 48 hours connect with claude,PerPlexity 
+
 ** Implement Google UCP ** — appear in Gemini and Google AI Mode
+
 ** Apply and implement OpenAI ACP on their behalf ** — appear in ChatGPT shopping
+
 ** Optimize their data weekly ** — rank above competitors in agent results
+
 ** Manage all protocol updates ** — they never worry about technical changes
 
 
