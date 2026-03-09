@@ -11,8 +11,25 @@ export default function Home() {
   const handleSubmit = async () => {
     if (!formData.name || !formData.url || !formData.email) return
     setSubmitting(true)
-    await new Promise(r => setTimeout(r, 1500))
-    setSubmitted(true)
+    try {
+      const res = await fetch('https://formspree.io/f/mnjgjvoq', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          business_name: formData.name,
+          website_url: formData.url,
+          email: formData.email,
+          category: formData.category,
+        }),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        alert('Something went wrong. Please try again.')
+      }
+    } catch {
+      alert('Network error. Please try again.')
+    }
     setSubmitting(false)
   }
 
@@ -234,3 +251,6 @@ export default function Home() {
     </div>
   )
 }
+```
+
+---
