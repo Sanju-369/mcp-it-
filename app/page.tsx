@@ -12,7 +12,7 @@ export default function Home() {
     if (!formData.name || !formData.url || !formData.email) return
     setSubmitting(true)
     try {
-      const res = await fetch('https://formspree.io/f/mnjgjvoq', {
+      const res = await fetch('https://formspree.io/f/xnjgjvrq', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
