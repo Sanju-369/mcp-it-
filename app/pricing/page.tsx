@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 
 export default function Pricing() {
@@ -19,7 +21,7 @@ export default function Pricing() {
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', justifyContent: 'center' }}>
           <span style={{ fontSize: 18 }}>🎉</span>
           <span style={{ color: '#fff', fontWeight: 700, fontSize: 15, fontFamily: 'var(--font-mono)' }}>
-            FOUNDING OFFER — First 5 customers get everything <span style={{ background: 'rgba(255,255,255,0.2)', padding: '2px 10px', borderRadius: 6 }}>100% FREE</span> Untili You Live 
+            FOUNDING OFFER — First 5 customers get everything <span style={{ background: 'rgba(255,255,255,0.2)', padding: '2px 10px', borderRadius: 6 }}>100% FREE</span> Until You Go Live
           </span>
           <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: 13 }}>· Only a few spots left</span>
         </div>
@@ -29,7 +31,7 @@ export default function Pricing() {
       <section style={{ padding: '72px 40px 56px', background: 'linear-gradient(160deg, #f8faff 0%, #ffffff 60%)', textAlign: 'center', borderBottom: '1px solid #e5e7eb' }}>
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 7, background: '#faf5ff', border: '1px solid #ddd6fe', borderRadius: 100, padding: '5px 13px', marginBottom: 22, fontSize: 12, fontWeight: 600, color: '#7c3aed', fontFamily: 'var(--font-mono)' }}>
           <span style={{ width: 6, height: 6, background: '#7c3aed', borderRadius: '50%', display: 'inline-block' }} />
-          🎁 First 5 Customers — Untill you Live
+          🎁 First 5 Customers — Free Until You Go Live
         </div>
         <h1 style={{ fontSize: 'clamp(34px, 5vw, 60px)', fontWeight: 700, letterSpacing: '-2px', marginBottom: 16 }}>
           Simple, Transparent Pricing
@@ -68,7 +70,7 @@ export default function Pricing() {
               desc: 'Get your business visible on all major AI shopping platforms.',
               color: '#374151',
               popular: false,
-              features: ['Google UCP Profile Setup', '3 Checkout endPoints','Email support'],
+              features: ['Google UCP Profile Setup', '3 Checkout Endpoints', 'Email support'],
             },
             {
               name: 'Growth',
@@ -76,7 +78,7 @@ export default function Pricing() {
               desc: 'Everything you need to dominate AI agent search results.',
               color: '#2563eb',
               popular: true,
-              features: ['Everything in Starter', 'Google Merchant Center Setup','Google Pay Configuration','Google Waitlist Submission','Weekly data optimization', 'Weekly performance report','Age'Priority email support'],
+              features: ['Everything in Starter', 'Google Merchant Center Setup', 'Google Pay Configuration', 'Google Waitlist Submission', 'Weekly data optimization', 'Weekly performance report', 'Priority email support'],
             },
             {
               name: 'Pro',
@@ -106,7 +108,7 @@ export default function Pricing() {
                 <span style={{ fontSize: 14 }}>🎁</span>
                 <div>
                   <div style={{ fontSize: 11, fontWeight: 700, color: '#7c3aed', fontFamily: 'var(--font-mono)' }}>FOUNDING CUSTOMER OFFER</div>
-                  <div style={{ fontSize: 11, color: '#6b7280' }}>First 5 customers · Untill Live </div>
+                  <div style={{ fontSize: 11, color: '#6b7280' }}>First 5 customers · Free until go live</div>
                 </div>
               </div>
 
@@ -115,7 +117,7 @@ export default function Pricing() {
                 <span style={{ fontSize: 44, fontWeight: 700, letterSpacing: '-2px', color: '#7c3aed' }}>$0</span>
                 <span style={{ fontSize: 14, color: '#9ca3af', textDecoration: 'line-through' }}>{plan.price}/mo</span>
               </div>
-              <div style={{ fontSize: 12, color: '#16a34a', fontWeight: 600, fontFamily: 'var(--font-mono)', marginBottom: 8 }}>FREE for 3 months, then {plan.price}/mo</div>
+              <div style={{ fontSize: 12, color: '#16a34a', fontWeight: 600, fontFamily: 'var(--font-mono)', marginBottom: 8 }}>FREE until live, then {plan.price}/mo</div>
               <p style={{ fontSize: 13, color: '#6b7280', marginBottom: 24, lineHeight: 1.6 }}>{plan.desc}</p>
               <div style={{ marginBottom: 28 }}>
                 {plan.features.map(f => (
@@ -137,7 +139,7 @@ export default function Pricing() {
               }}>
                 Claim Free Spot →
               </Link>
-              <p style={{ textAlign: 'center', marginTop: 9, fontSize: 12, color: '#9ca3af' }}>3 months free · No credit card · Cancel anytime</p>
+              <p style={{ textAlign: 'center', marginTop: 9, fontSize: 12, color: '#9ca3af' }}>Free until live · No credit card · Cancel anytime</p>
             </div>
           ))}
         </div>
@@ -146,7 +148,7 @@ export default function Pricing() {
         <div style={{ maxWidth: 960, margin: '24px auto 0', background: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: 10, padding: '16px 24px', display: 'flex', alignItems: 'center', gap: 12 }}>
           <span style={{ fontSize: 18 }}>ℹ️</span>
           <p style={{ fontSize: 13, color: '#6b7280', lineHeight: 1.6, margin: 0 }}>
-            <strong style={{ color: '#0f172a' }}>After your 3-month free period:</strong> Choose the plan that fits best and continue at the regular price. We will email you 7 days before — no surprise charges, ever. Cancel or switch at any time.
+            <strong style={{ color: '#0f172a' }}>After you go live:</strong> Choose the plan that fits best and continue at the regular price. We will email you before your free period ends — no surprise charges, ever. Cancel or switch at any time.
           </p>
         </div>
       </section>
@@ -165,13 +167,14 @@ export default function Pricing() {
               </thead>
               <tbody>
                 {[
-                  ['MCP Server', '✓', '✓', '✓'],
-                  ['Google UCP', '✓', '✓', '✓'],
-                  ['OpenAI ACP Application', '✓', '✓', '✓'],
-                  ['Directory Listing', '✓', '✓', '✓'],
+                  ['Google UCP Profile', '✓', '✓', '✓'],
+                  ['Checkout Endpoints', '3', 'Unlimited', 'Unlimited'],
+                  ['Google Merchant Center', '—', '✓', '✓'],
+                  ['Google Pay Configuration', '—', '✓', '✓'],
+                  ['Google Waitlist Submission', '—', '✓', '✓'],
                   ['Performance Reports', 'Monthly', 'Weekly', 'Daily'],
                   ['Data Optimization', '—', 'Weekly', 'Daily'],
-                  ['Competitor Tracking', '—', '✓', '✓'],
+                  ['Competitor Tracking', '—', '—', '✓'],
                   ['New Platform Access', '—', '—', 'First access'],
                   ['Support', 'Email', 'Priority Email', 'Dedicated manager'],
                 ].map((row, i) => (
@@ -185,7 +188,7 @@ export default function Pricing() {
                 {/* Founding offer row */}
                 <tr style={{ background: 'linear-gradient(90deg, #faf5ff, #eff6ff)', borderTop: '2px solid #ddd6fe' }}>
                   <td style={{ padding: '13px 20px', color: '#7c3aed', fontWeight: 700, fontSize: 13 }}>🎁 Founding Customer Price</td>
-                  {['$0 / 3 mo', '$0 / 3 mo', '$0 / 3 mo'].map((v, j) => (
+                  {['$0 until live', '$0 until live', '$0 until live'].map((v, j) => (
                     <td key={j} style={{ padding: '13px 20px', textAlign: 'center', color: '#7c3aed', fontWeight: 700, fontSize: 13 }}>{v}</td>
                   ))}
                 </tr>
@@ -201,7 +204,7 @@ export default function Pricing() {
           <h2 style={{ fontSize: 28, fontWeight: 700, letterSpacing: '-1px', marginBottom: 36, textAlign: 'center' }}>Frequently Asked Questions</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             {[
-              { q: 'What is the founding customer offer?', a: 'The first 5 businesses to register get full access to their chosen plan completely free for 3 months. No credit card required. After 3 months, you simply choose to continue at the regular price or cancel — no pressure.' },
+              { q: 'What is the founding customer offer?', a: 'The first 5 businesses to register get full access to their chosen plan completely free until their MCP server goes live. No credit card required. After that, you simply choose to continue at the regular price or cancel — no pressure.' },
               { q: 'How do I know if I am one of the first 5?', a: 'Register now and we will confirm your founding customer status by email within a few hours. If the 5 spots are already filled, you will automatically go onto our regular 30-day free trial instead.' },
               { q: 'How quickly will my business go live?', a: 'Your MCP server and Google UCP are typically live within 48 hours of registration. The OpenAI ACP application is submitted immediately but requires OpenAI approval, which varies.' },
               { q: 'Do I need any technical knowledge?', a: 'None whatsoever. You fill in a form with your business details. We handle everything — building, deploying, connecting, and maintaining.' },
