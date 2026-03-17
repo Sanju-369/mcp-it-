@@ -19,7 +19,7 @@ export default function Pricing() {
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', justifyContent: 'center' }}>
           <span style={{ fontSize: 18 }}>🎉</span>
           <span style={{ color: '#fff', fontWeight: 700, fontSize: 15, fontFamily: 'var(--font-mono)' }}>
-            FOUNDING OFFER — First 5 customers get everything <span style={{ background: 'rgba(255,255,255,0.2)', padding: '2px 10px', borderRadius: 6 }}>100% FREE</span> for 3 months
+            FOUNDING OFFER — First 5 customers get everything <span style={{ background: 'rgba(255,255,255,0.2)', padding: '2px 10px', borderRadius: 6 }}>100% FREE</span> Untili You Live 
           </span>
           <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: 13 }}>· Only a few spots left</span>
         </div>
@@ -29,13 +29,13 @@ export default function Pricing() {
       <section style={{ padding: '72px 40px 56px', background: 'linear-gradient(160deg, #f8faff 0%, #ffffff 60%)', textAlign: 'center', borderBottom: '1px solid #e5e7eb' }}>
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 7, background: '#faf5ff', border: '1px solid #ddd6fe', borderRadius: 100, padding: '5px 13px', marginBottom: 22, fontSize: 12, fontWeight: 600, color: '#7c3aed', fontFamily: 'var(--font-mono)' }}>
           <span style={{ width: 6, height: 6, background: '#7c3aed', borderRadius: '50%', display: 'inline-block' }} />
-          🎁 First 5 Customers — 3 Months Completely Free
+          🎁 First 5 Customers — Untill you Live
         </div>
         <h1 style={{ fontSize: 'clamp(34px, 5vw, 60px)', fontWeight: 700, letterSpacing: '-2px', marginBottom: 16 }}>
           Simple, Transparent Pricing
         </h1>
         <p style={{ fontSize: 17, color: '#6b7280', maxWidth: 500, margin: '0 auto', lineHeight: 1.7 }}>
-          We are looking for our first 5 founding customers. Get full access free for 3 months — no credit card, no commitment.
+          We are looking for our first 5 founding customers. Get full access free — no credit card, no commitment.
         </p>
 
         {/* Spots counter */}
@@ -64,19 +64,19 @@ export default function Pricing() {
           {[
             {
               name: 'Starter',
-              price: '$299',
+              price: '$29',
               desc: 'Get your business visible on all major AI shopping platforms.',
               color: '#374151',
               popular: false,
-              features: ['MCP server setup & hosting', 'Google UCP implementation', 'OpenAI ACP application', 'Business directory listing', 'Monthly performance report', 'Email support'],
+              features: ['Google UCP Profile Setup', '3 Checkout endPoints','Email support'],
             },
             {
               name: 'Growth',
-              price: '$499',
+              price: '$49',
               desc: 'Everything you need to dominate AI agent search results.',
               color: '#2563eb',
               popular: true,
-              features: ['Everything in Starter', 'Weekly data optimization', 'Weekly performance report', 'Priority ACP application', 'Agent query analytics', 'Competitor ranking tracker', 'Priority email support'],
+              features: ['Everything in Starter', 'Google Merchant Center Setup','Google Pay Configuration','Google Waitlist Submission','Weekly data optimization', 'Weekly performance report','Age'Priority email support'],
             },
             {
               name: 'Pro',
@@ -106,7 +106,7 @@ export default function Pricing() {
                 <span style={{ fontSize: 14 }}>🎁</span>
                 <div>
                   <div style={{ fontSize: 11, fontWeight: 700, color: '#7c3aed', fontFamily: 'var(--font-mono)' }}>FOUNDING CUSTOMER OFFER</div>
-                  <div style={{ fontSize: 11, color: '#6b7280' }}>First 5 customers · 3 months free</div>
+                  <div style={{ fontSize: 11, color: '#6b7280' }}>First 5 customers · Untill Live </div>
                 </div>
               </div>
 
