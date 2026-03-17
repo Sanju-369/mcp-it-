@@ -227,7 +227,7 @@ export default function Home() {
           <h2 style={{ fontSize: 'clamp(24px, 3vw, 40px)', fontWeight: 800, letterSpacing: '-1.5px', marginBottom: '12px' }}>Have Questions?</h2>
           <p style={{ color: '#64748b', fontSize: '15px', lineHeight: 1.7, marginBottom: '36px' }}>We typically respond within a few hours. Reach out anytime.</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
-            {[{ icon: '✉️', label: 'Email Us', value: 'hello@mcp-it.com', link: 'mailto:hello@mcp-it.com' }, { icon: '𝕏', label: 'Twitter / X', value: '@mcpit_app', link: '#' }, { icon: '💬', label: 'WhatsApp', value: 'Message Us', link: '#' }].map((item, i) => (
+            {[{ icon: '✉️', label: 'Email Us', value: 'sm3129914@gmail.com', link: 'mailto:hello@mcp-it.com' }, { icon: '𝕏', label: 'Twitter / X', value: '@mcpit_app', link: '#' },{ icon: '💬', label: 'Chat', title: 'WhatsApp', value: '+760 691 606', link: 'https://wa.me/760691606'},].map((item, i) => (
               <a key={i} href={item.link} style={{ background: '#fff', borderRadius: '12px', padding: '24px', border: '1px solid #e4e7f0', textDecoration: 'none', display: 'block', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}>
                 <div style={{ fontSize: '28px', marginBottom: '10px' }}>{item.icon}</div>
                 <div style={{ fontWeight: 700, fontSize: '14px', color: '#0f172a', marginBottom: '4px' }}>{item.label}</div>
