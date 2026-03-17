@@ -1,4 +1,3 @@
-
 import Link from 'next/link'
 
 export default function Pricing() {
@@ -15,18 +14,48 @@ export default function Pricing() {
         </div>
       </header>
 
+      {/* FOUNDING CUSTOMER BANNER */}
+      <div style={{ background: 'linear-gradient(90deg, #7c3aed 0%, #2563eb 100%)', padding: '14px 40px', textAlign: 'center' }}>
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', justifyContent: 'center' }}>
+          <span style={{ fontSize: 18 }}>🎉</span>
+          <span style={{ color: '#fff', fontWeight: 700, fontSize: 15, fontFamily: 'var(--font-mono)' }}>
+            FOUNDING OFFER — First 5 customers get everything <span style={{ background: 'rgba(255,255,255,0.2)', padding: '2px 10px', borderRadius: 6 }}>100% FREE</span> for 3 months
+          </span>
+          <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: 13 }}>· Only a few spots left</span>
+        </div>
+      </div>
+
       {/* HERO */}
       <section style={{ padding: '72px 40px 56px', background: 'linear-gradient(160deg, #f8faff 0%, #ffffff 60%)', textAlign: 'center', borderBottom: '1px solid #e5e7eb' }}>
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 7, background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: 100, padding: '5px 13px', marginBottom: 22, fontSize: 12, fontWeight: 600, color: '#16a34a', fontFamily: 'var(--font-mono)' }}>
-          <span style={{ width: 6, height: 6, background: '#16a34a', borderRadius: '50%' }} />
-          30-Day Free Trial — No Credit Card
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 7, background: '#faf5ff', border: '1px solid #ddd6fe', borderRadius: 100, padding: '5px 13px', marginBottom: 22, fontSize: 12, fontWeight: 600, color: '#7c3aed', fontFamily: 'var(--font-mono)' }}>
+          <span style={{ width: 6, height: 6, background: '#7c3aed', borderRadius: '50%', display: 'inline-block' }} />
+          🎁 First 5 Customers — 3 Months Completely Free
         </div>
         <h1 style={{ fontSize: 'clamp(34px, 5vw, 60px)', fontWeight: 700, letterSpacing: '-2px', marginBottom: 16 }}>
           Simple, Transparent Pricing
         </h1>
-        <p style={{ fontSize: 17, color: '#6b7280', maxWidth: 460, margin: '0 auto', lineHeight: 1.7 }}>
-          Start free. Pay only when you are ready. Cancel any time with no questions asked.
+        <p style={{ fontSize: 17, color: '#6b7280', maxWidth: 500, margin: '0 auto', lineHeight: 1.7 }}>
+          We are looking for our first 5 founding customers. Get full access free for 3 months — no credit card, no commitment.
         </p>
+
+        {/* Spots counter */}
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 16, marginTop: 28, background: '#fff', border: '1px solid #e5e7eb', borderRadius: 12, padding: '14px 28px', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
+          <div style={{ textAlign: 'left' }}>
+            <div style={{ fontSize: 11, color: '#9ca3af', fontFamily: 'var(--font-mono)', letterSpacing: 1, textTransform: 'uppercase', marginBottom: 4 }}>Founding Spots Remaining</div>
+            <div style={{ display: 'flex', gap: 6 }}>
+              {[1,2,3,4,5].map(n => (
+                <div key={n} style={{ width: 28, height: 28, borderRadius: 6, background: n <= 2 ? '#f3f4f6' : '#eff6ff', border: n <= 2 ? '1px solid #e5e7eb' : '1px solid #bfdbfe', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 700, color: n <= 2 ? '#d1d5db' : '#2563eb', fontFamily: 'var(--font-mono)' }}>
+                  {n <= 2 ? '✓' : n}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div style={{ width: 1, height: 36, background: '#e5e7eb' }} />
+          <div style={{ textAlign: 'left' }}>
+            <div style={{ fontSize: 13, fontWeight: 700, color: '#7c3aed' }}>3 spots left</div>
+            <div style={{ fontSize: 12, color: '#9ca3af' }}>2 already claimed</div>
+          </div>
+        </div>
       </section>
 
       {/* PLANS */}
@@ -35,7 +64,7 @@ export default function Pricing() {
           {[
             {
               name: 'Starter',
-              price: '$29',
+              price: '$299',
               desc: 'Get your business visible on all major AI shopping platforms.',
               color: '#374151',
               popular: false,
@@ -43,7 +72,7 @@ export default function Pricing() {
             },
             {
               name: 'Growth',
-              price: '$49',
+              price: '$499',
               desc: 'Everything you need to dominate AI agent search results.',
               color: '#2563eb',
               popular: true,
@@ -51,7 +80,7 @@ export default function Pricing() {
             },
             {
               name: 'Pro',
-              price: '$99',
+              price: '$799',
               desc: 'For businesses serious about being first in every AI search.',
               color: '#7c3aed',
               popular: false,
@@ -71,11 +100,22 @@ export default function Pricing() {
                   MOST POPULAR
                 </div>
               )}
-              <div style={{ fontSize: 15, fontWeight: 700, color: plan.color, marginBottom: 10 }}>{plan.name}</div>
-              <div style={{ display: 'flex', alignItems: 'baseline', gap: 4, marginBottom: 8 }}>
-                <span style={{ fontSize: 44, fontWeight: 700, letterSpacing: '-2px', color: '#0f172a' }}>{plan.price}</span>
-                <span style={{ fontSize: 14, color: '#9ca3af' }}>/month</span>
+
+              {/* Founding offer badge */}
+              <div style={{ background: 'linear-gradient(90deg, #faf5ff, #eff6ff)', border: '1px solid #ddd6fe', borderRadius: 8, padding: '8px 12px', marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
+                <span style={{ fontSize: 14 }}>🎁</span>
+                <div>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: '#7c3aed', fontFamily: 'var(--font-mono)' }}>FOUNDING CUSTOMER OFFER</div>
+                  <div style={{ fontSize: 11, color: '#6b7280' }}>First 5 customers · 3 months free</div>
+                </div>
               </div>
+
+              <div style={{ fontSize: 15, fontWeight: 700, color: plan.color, marginBottom: 10 }}>{plan.name}</div>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: 8, marginBottom: 4 }}>
+                <span style={{ fontSize: 44, fontWeight: 700, letterSpacing: '-2px', color: '#7c3aed' }}>$0</span>
+                <span style={{ fontSize: 14, color: '#9ca3af', textDecoration: 'line-through' }}>{plan.price}/mo</span>
+              </div>
+              <div style={{ fontSize: 12, color: '#16a34a', fontWeight: 600, fontFamily: 'var(--font-mono)', marginBottom: 8 }}>FREE for 3 months, then {plan.price}/mo</div>
               <p style={{ fontSize: 13, color: '#6b7280', marginBottom: 24, lineHeight: 1.6 }}>{plan.desc}</p>
               <div style={{ marginBottom: 28 }}>
                 {plan.features.map(f => (
@@ -87,19 +127,27 @@ export default function Pricing() {
               </div>
               <Link href="/#register" style={{
                 display: 'block', textAlign: 'center',
-                background: plan.popular ? '#2563eb' : '#fff',
-                color: plan.popular ? '#fff' : '#374151',
-                border: plan.popular ? 'none' : '1px solid #d1d5db',
+                background: plan.popular ? '#2563eb' : '#7c3aed',
+                color: '#fff',
+                border: 'none',
                 padding: '12px', borderRadius: 9,
                 fontWeight: 600, fontSize: 14,
                 textDecoration: 'none',
-                boxShadow: plan.popular ? '0 4px 14px rgba(37,99,235,0.3)' : 'none',
+                boxShadow: plan.popular ? '0 4px 14px rgba(37,99,235,0.3)' : '0 4px 14px rgba(124,58,237,0.25)',
               }}>
-                Start Free Trial
+                Claim Free Spot →
               </Link>
-              <p style={{ textAlign: 'center', marginTop: 9, fontSize: 12, color: '#9ca3af' }}>30 days free · No credit card</p>
+              <p style={{ textAlign: 'center', marginTop: 9, fontSize: 12, color: '#9ca3af' }}>3 months free · No credit card · Cancel anytime</p>
             </div>
           ))}
+        </div>
+
+        {/* After free period note */}
+        <div style={{ maxWidth: 960, margin: '24px auto 0', background: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: 10, padding: '16px 24px', display: 'flex', alignItems: 'center', gap: 12 }}>
+          <span style={{ fontSize: 18 }}>ℹ️</span>
+          <p style={{ fontSize: 13, color: '#6b7280', lineHeight: 1.6, margin: 0 }}>
+            <strong style={{ color: '#0f172a' }}>After your 3-month free period:</strong> Choose the plan that fits best and continue at the regular price. We will email you 7 days before — no surprise charges, ever. Cancel or switch at any time.
+          </p>
         </div>
       </section>
 
@@ -134,6 +182,13 @@ export default function Pricing() {
                     ))}
                   </tr>
                 ))}
+                {/* Founding offer row */}
+                <tr style={{ background: 'linear-gradient(90deg, #faf5ff, #eff6ff)', borderTop: '2px solid #ddd6fe' }}>
+                  <td style={{ padding: '13px 20px', color: '#7c3aed', fontWeight: 700, fontSize: 13 }}>🎁 Founding Customer Price</td>
+                  {['$0 / 3 mo', '$0 / 3 mo', '$0 / 3 mo'].map((v, j) => (
+                    <td key={j} style={{ padding: '13px 20px', textAlign: 'center', color: '#7c3aed', fontWeight: 700, fontSize: 13 }}>{v}</td>
+                  ))}
+                </tr>
               </tbody>
             </table>
           </div>
@@ -146,7 +201,8 @@ export default function Pricing() {
           <h2 style={{ fontSize: 28, fontWeight: 700, letterSpacing: '-1px', marginBottom: 36, textAlign: 'center' }}>Frequently Asked Questions</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             {[
-              { q: 'How does the free trial work?', a: '30 days of full access on any plan. No credit card required to start. We send a reminder before the trial ends and only charge if you choose to continue.' },
+              { q: 'What is the founding customer offer?', a: 'The first 5 businesses to register get full access to their chosen plan completely free for 3 months. No credit card required. After 3 months, you simply choose to continue at the regular price or cancel — no pressure.' },
+              { q: 'How do I know if I am one of the first 5?', a: 'Register now and we will confirm your founding customer status by email within a few hours. If the 5 spots are already filled, you will automatically go onto our regular 30-day free trial instead.' },
               { q: 'How quickly will my business go live?', a: 'Your MCP server and Google UCP are typically live within 48 hours of registration. The OpenAI ACP application is submitted immediately but requires OpenAI approval, which varies.' },
               { q: 'Do I need any technical knowledge?', a: 'None whatsoever. You fill in a form with your business details. We handle everything — building, deploying, connecting, and maintaining.' },
               { q: 'Are there transaction fees on sales?', a: 'We charge no transaction fees. When customers purchase via ChatGPT ACP, OpenAI applies a 4% platform fee directly to that transaction — but that is separate from your subscription.' },
