@@ -229,8 +229,8 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
             {[
               { icon: '✉️', label: 'Email Us', value: 'sm3129914@gmail.com', link: 'mailto:sm3129914@gmail.com' },
-              { icon: '𝕏', label: 'Twitter / X', value: '@mcpit_app', link: '#' },
-              { icon: '💬', label: 'WhatsApp', value: '+760 691 606', link: 'https://wa.me/760691606' },
+              { icon: '𝕏', label: 'Twitter / X', value: '@mcpit_app', link: 'https://x.com/home' },
+              { icon: '💬', label: 'WhatsApp', value: '+ 91 760 691 606', link: 'https://wa.me/760691606' },
             ].map((item, i) => (
               <a key={i} href={item.link} style={{ background: '#fff', borderRadius: '12px', padding: '24px', border: '1px solid #e4e7f0', textDecoration: 'none', display: 'block', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}>
                 <div style={{ fontSize: '28px', marginBottom: '10px' }}>{item.icon}</div>
